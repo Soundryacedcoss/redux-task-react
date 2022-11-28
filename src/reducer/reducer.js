@@ -4,14 +4,14 @@ const intial_data={
 const reducer=(state=intial_data,action)=>{
    switch(action.type){
     case 'ADD_ITEM':
-    const {id,data,email,number,addres}=action.payload; 
+    const {id,nameval,email,number,addres}=action.payload; 
     return{
         ...state,
         list:[
               ...state.list,
         {
-             id:id,
-            data:data,
+            id:id,
+            nameval:nameval,
             email:email,
             addres:addres,
             number:number,
